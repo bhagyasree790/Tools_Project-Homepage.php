@@ -1,0 +1,93 @@
+
+*{
+	padding: 0px;
+	margin-left: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+.about{
+	width: 100%;
+	padding: 80px 100px;
+	background-color: #101010;
+}
+.about img{
+	height: 430px;
+	width: 430px;
+	object-position: right;
+}
+.about-text{
+	width: 450px;
+	position: relative;
+	animation-name: mymove;
+	animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.main_about{
+	width: 100%;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text-h2{
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.about-text-h2 span{
+	position: relative;
+  display: inline-block;
+  font-size: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+
+.about-text h5{
+	color: orangered;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+.content .button_about a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.button_about:hover{
+    background-color: #fff;
+}
+.button_about {
+    width: 120px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+  }
+  #anim {animation-timing-function: ease;}
+  @keyframes mymove {
+	from {left: 0px;}
+	to {left: 100px;}
+  }
+  @keyframes flip {
+	0%,80% {
+	  transform: rotateY(360deg) 
+	}
+  }
